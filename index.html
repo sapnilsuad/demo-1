@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+    <link rel="stylesheet" href="css/style.css">       
+</head>
+<body>   
+    <div class="main">
+        <div class="container"> 
+            <div class="navbar">  
+                <div class="logo">
+                    <h1>Company Name</h1> 
+                </div>
+                <div class="items"> 
+                    <ul>
+                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li> 
+                        <li><a href="https://www.whatsapp.com/" target="_blank">+880 188676 445</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="head-text">
+                <h1>Our services</h1>
+                <div class="line-2"></div>  
+            </div>
+            <div class="service">   
+                <div class="row">   
+                    <div class="col-1 one wow slideInLeft" data-wow-duration=".8s">      
+                        <h4>Basic</h4>  
+                        <div class="price"> 
+                            <h1>$40</h1> 
+                            <p>Free for life</p> 
+                        </div>
+                        <ul>
+                            <li>type services</li> 
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 two wow slideInUp" data-wow-duration=".5s">  
+                        <h4>Basic</h4>  
+                        <div class="price"> 
+                            <h1>$40</h1> 
+                            <p>Free for life</p> 
+                        </div>
+                        <div class="line"><p>Our Most popular</p></div>   
+                        <ul>
+                            <li>type services</li> 
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 three wow slideInRight" data-wow-duration=".8s">  
+                        <h4>Basic</h4>  
+                        <div class="price"> 
+                            <h1>$40</h1> 
+                            <p>Free for life</p> 
+                        </div>
+                        <ul>
+                            <li>type services</li> 
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                            <li>type services</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+    <footer>  
+        <p>DESIGNED BY <a href="http://sapnilsuad.cf/" target="_blank">SAPNIL SHAHRIAR SUAD</a></p> 
+    </footer> 
+
+
+    <script src="js/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> 
+    <script>
+        new WOW().init(); 
+    </script>  
+    <script> 
+        $(document).ready(function(){
+
+
+        // If tab 2 is active  
+
+
+
+        $('.one').mouseover(function(){       
+
+        $('.two').addClass('opac');   
+        $('.three').addClass('opac');
+
+
+        });
+
+ 
+        $('.one').mouseout(function(){              
+
+        $('.two').removeClass('opac');    
+        $('.one').removeClass('opac');
+        $('.three').removeClass('opac');
+
+        });
+
+         // If tab 3 is active  
+
+
+        $('.three').mouseover(function(){          
+
+        $('.two').addClass('opac');    
+        $('.one').addClass('opac');
+        $('.three').removeClass('opac');
+
+        });
+
+        $('.three').mouseout(function(){            
+
+        $('.two').removeClass('opac');    
+        $('.one').removeClass('opac');
+        $('.three').removeClass('opac');
+
+        });
+
+
+
+        // If tab 2 is active     
+
+
+        $('.two').mouseover(function(){          
+
+        $('.two').removeClass('opac');       
+        $('.one').addClass('opac');
+        $('.three').addClass('opac'); 
+
+        });
+
+        $('.two').mouseout(function(){            
+
+        $('.two').removeClass('opac');    
+        $('.one').removeClass('opac');
+        $('.three').removeClass('opac');
+
+        });
+
+
+
+        });
+    </script>
+
+</body>
+</html>
